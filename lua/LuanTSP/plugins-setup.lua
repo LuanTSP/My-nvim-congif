@@ -67,7 +67,9 @@ require("lazy").setup({
   -- dashboard
   { 'glepnir/dashboard-nvim', dependencies = { {'nvim-tree/nvim-web-devicons'}}},
   -- git integration
-  { 'lewis6991/gitsigns.nvim' },
+  { 'lewis6991/gitsigns.nvim' }, -- git hightlights and icons
+  { 'tpope/vim-fugitive' }, -- git wrapper for vim
+  { 'rbong/vim-flog' }, -- git branch viwer
   -- notification
   { 'rcarriga/nvim-notify' },
   -- todo comments
