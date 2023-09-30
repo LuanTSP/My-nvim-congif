@@ -17,6 +17,24 @@ require("lazy").setup({
   { "EdenEast/nightfox.nvim" },
   { 'navarasu/onedark.nvim' },
   { "nyoom-engineering/oxocarbon.nvim" },
+  -- ui
+  {
+    'stevearc/dressing.nvim',
+    opts = {},
+  },
+  {
+    "folke/which-key.nvim", -- keybind cheat sheet
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
   -- split window navigator
   { "christoomey/vim-tmux-navigator" },
   -- toggle maximizes split window
