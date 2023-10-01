@@ -4,6 +4,8 @@
 -- ██      ██         ██ ██      
 -- ███████ ██    ███████ ██      
 
+-- TODO: configure all sheat sheets in which-key
+
 require("LuanTSP.plugins-setup")
 require("LuanTSP.core.options")
 require("LuanTSP.core.keymaps")
@@ -18,7 +20,7 @@ require("LuanTSP.plugins.lsp.lspsaga")
 require("LuanTSP.plugins.lsp.mason")
 require("LuanTSP.plugins.autopairs")
 require("LuanTSP.plugins.tresitter")
-require("LuanTSP.plugins.dashboard")
 require("LuanTSP.plugins.bufferline")
 require("LuanTSP.plugins.gitsigns")
 require("LuanTSP.plugins.notify")
+require("LuanTSP.plugins.ibl")

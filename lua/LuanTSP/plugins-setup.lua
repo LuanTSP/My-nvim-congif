@@ -22,8 +22,10 @@ require("lazy").setup({
     'stevearc/dressing.nvim',
     opts = {},
   },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }, -- indentation lines
+  -- cheat sheet
   {
-    "folke/which-key.nvim", -- keybind cheat sheet
+    "folke/which-key.nvim",
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
@@ -82,8 +84,6 @@ require("lazy").setup({
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   -- multicursor
   { 'mg979/vim-visual-multi' },
-  -- dashboard
-  { 'glepnir/dashboard-nvim', dependencies = { {'nvim-tree/nvim-web-devicons'}}},
   -- git integration
   { 'lewis6991/gitsigns.nvim' }, -- git hightlights and icons
   { 'tpope/vim-fugitive' }, -- git wrapper for vim
