@@ -17,26 +17,27 @@ require("lazy").setup({
   { "EdenEast/nightfox.nvim" },
   { 'navarasu/onedark.nvim' },
   { "nyoom-engineering/oxocarbon.nvim" },
+  -- top tab
+  {
+    "utilyre/barbecue.nvim",
+    name = "barbecue",
+    version = "*",
+    dependencies = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    opts = {
+      -- configurations go here
+    },
+  },
   -- ui
   {
     'stevearc/dressing.nvim',
     opts = {},
   },
+  { 'mawkler/modicator.nvim' },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }, -- indentation lines
-  -- cheat sheet
-  {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-    end,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  },
+  { 'NvChad/nvim-colorizer.lua'},
   -- split window navigator
   { "christoomey/vim-tmux-navigator" },
   -- toggle maximizes split window
@@ -44,11 +45,11 @@ require("lazy").setup({
   -- easy comments
   { "numToStr/Comment.nvim" },
   -- file tree explorer
-  { "nvim-tree/nvim-tree.lua" },
+  { "luukvbaal/nnn.nvim" },
   { "nvim-tree/nvim-web-devicons" },
   -- line for nvim modes
   { "nvim-lualine/lualine.nvim", lazy = false },
-
+  { "RRethy/vim-illuminate" },
   -- fuzzy finder
   { 'nvim-telescope/telescope.nvim', tag = '0.1.3', dependencies = { 'nvim-lua/plenary.nvim' }},
 
