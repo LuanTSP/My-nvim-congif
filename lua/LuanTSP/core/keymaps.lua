@@ -30,8 +30,5 @@ keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>")
 
 -- nnn
-keymap.set("t", "ee", ":q<CR>")
 keymap.set("n", "ee", ":NnnExplorer<CR>")
 keymap.set("n", "EE", ":NnnPicker<CR>")
-keymap.set("t", "EE", ":q<CR>")
-keymap.set("t", "l", ":<CR>")

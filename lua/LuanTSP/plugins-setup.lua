@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   -- prefered themes
-  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  { "bluz71/vim-nightfly-colors",      name = "nightfly", lazy = false, priority = 1000 },
   { "EdenEast/nightfox.nvim" },
   { 'navarasu/onedark.nvim' },
   { "nyoom-engineering/oxocarbon.nvim" },
@@ -30,14 +30,22 @@ require("lazy").setup({
       -- configurations go here
     },
   },
+  -- formatting
+  {
+    'stevearc/conform.nvim',
+    opts = {},
+  },
+  -- linting
+  { 'mfussenegger/nvim-lint' },
+  -- word hightlights
+  { "RRethy/vim-illuminate" },
   -- ui
   {
     'stevearc/dressing.nvim',
     opts = {},
   },
-  { 'mawkler/modicator.nvim' },
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }, -- indentation lines
-  { 'NvChad/nvim-colorizer.lua'},
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl",       opts = {} }, -- indentation lines
+  { 'NvChad/nvim-colorizer.lua' },
   -- toggle maximizes split window
   { "szw/vim-maximizer" },
   -- easy comments
@@ -46,11 +54,11 @@ require("lazy").setup({
   { "luukvbaal/nnn.nvim" },
   { "nvim-tree/nvim-web-devicons" },
   -- line for nvim modes
-  { "nvim-lualine/lualine.nvim", lazy = false },
-  { "RRethy/vim-illuminate" },
+  { "nvim-lualine/lualine.nvim",           lazy = false },
   -- fuzzy finder
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.3', dependencies = { 'nvim-lua/plenary.nvim' }},
-
+  { 'nvim-telescope/telescope.nvim',       tag = '0.1.3',      dependencies = { 'nvim-lua/plenary.nvim' } },
+  -- navigation
+  { 'christoomey/vim-tmux-navigator' },
   -- autocompletion
   { 'neovim/nvim-lspconfig' },
   { 'hrsh7th/cmp-nvim-lsp' },
@@ -73,26 +81,24 @@ require("lazy").setup({
   { "rafamadriz/friendly-snippets" },
 
   -- treesitter
-  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+  { "nvim-treesitter/nvim-treesitter",     build = ":TSUpdate" },
 
   -- autopair and autoclose
   { 'windwp/nvim-autopairs' },
-  { "windwp/nvim-ts-autotag"},
+  { "windwp/nvim-ts-autotag" },
 
   -- tab navigation
-  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+  { 'akinsho/bufferline.nvim',             version = "*",      dependencies = 'nvim-tree/nvim-web-devicons' },
   -- multicursor
   { 'mg979/vim-visual-multi' },
   -- git integration
   { 'lewis6991/gitsigns.nvim' }, -- git hightlights and icons
-  { 'tpope/vim-fugitive' }, -- git wrapper for vim
-  { 'rbong/vim-flog' }, -- git branch viwer
   {
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
     requires = {
-        "nvim-telescope/telescope.nvim",
-        "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim",
     },
   },
   -- notification
@@ -108,4 +114,3 @@ require("lazy").setup({
     },
   },
 })
-

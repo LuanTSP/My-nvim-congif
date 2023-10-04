@@ -1,8 +1,8 @@
--- ██   ████████ ███████ ██████  
+-- ██   ████████ ███████ ██████ 
 -- ██      ██    ██      ██   ██ 
 -- ██      ██    ███████ ██████  
--- ██      ██         ██ ██      
--- ███████ ██    ███████ ██      
+-- ██      ██         ██ ██     
+-- ███████ ██    ███████ ██ 
 
 require("LuanTSP.plugins-setup")
 require("LuanTSP.core.options")
@@ -24,5 +24,6 @@ require("LuanTSP.plugins.ibl")
 require("LuanTSP.plugins.nvim-colorizer")
 require("LuanTSP.plugins.nnn")
 require("LuanTSP.plugins.vim-illuminate")
-require("LuanTSP.plugins.modicator")
 require("LuanTSP.plugins.lazygit")
+require("LuanTSP.plugins.conform")
+require("LuanTSP.plugins.nvim-lint")
