@@ -91,6 +91,7 @@ require("lazy").setup({
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
     requires = {
+        "nvim-telescope/telescope.nvim",
         "nvim-lua/plenary.nvim",
     },
   },
