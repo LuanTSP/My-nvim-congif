@@ -38,8 +38,6 @@ require("lazy").setup({
   { 'mawkler/modicator.nvim' },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }, -- indentation lines
   { 'NvChad/nvim-colorizer.lua'},
-  -- split window navigator
-  { "christoomey/vim-tmux-navigator" },
   -- toggle maximizes split window
   { "szw/vim-maximizer" },
   -- easy comments
@@ -89,6 +87,13 @@ require("lazy").setup({
   { 'lewis6991/gitsigns.nvim' }, -- git hightlights and icons
   { 'tpope/vim-fugitive' }, -- git wrapper for vim
   { 'rbong/vim-flog' }, -- git branch viwer
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+  },
   -- notification
   { 'rcarriga/nvim-notify' },
   -- todo comments
