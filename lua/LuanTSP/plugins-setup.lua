@@ -37,8 +37,6 @@ require("lazy").setup({
   },
   -- linting
   { 'mfussenegger/nvim-lint' },
-  -- word hightlights
-  { "RRethy/vim-illuminate" },
   -- ui
   {
     'stevearc/dressing.nvim',
