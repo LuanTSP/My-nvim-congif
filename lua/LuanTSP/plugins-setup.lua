@@ -55,8 +55,6 @@ require("lazy").setup({
   { "nvim-lualine/lualine.nvim",           lazy = false },
   -- fuzzy finder
   { 'nvim-telescope/telescope.nvim',       tag = '0.1.3',      dependencies = { 'nvim-lua/plenary.nvim' } },
-  -- navigation
-  { 'christoomey/vim-tmux-navigator' },
   -- autocompletion
   { 'neovim/nvim-lspconfig' },
   { 'hrsh7th/cmp-nvim-lsp' },
@@ -84,9 +82,13 @@ require("lazy").setup({
   -- autopair and autoclose
   { 'windwp/nvim-autopairs' },
   { "windwp/nvim-ts-autotag" },
+  -- navigation
+  { 'christoomey/vim-tmux-navigator' },
 
   -- tab navigation
   { 'akinsho/bufferline.nvim',             version = "*",      dependencies = 'nvim-tree/nvim-web-devicons' },
+  -- word navigation
+  { "ggandor/leap.nvim" },
   -- multicursor
   { 'mg979/vim-visual-multi' },
   -- git integration
@@ -111,4 +113,5 @@ require("lazy").setup({
       -- refer to the configuration section below
     },
   },
+  { 'glepnir/dashboard-nvim', event = 'VimEnter' },
 })

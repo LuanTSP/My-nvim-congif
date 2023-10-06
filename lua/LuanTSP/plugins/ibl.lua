@@ -3,9 +3,14 @@ if not status then
   return
 end
 
-ibl.setup()
+ibl.setup({
+  exclude = {
+    filetypes = { "dashboard" },
+    buftypes = { "dashboard" },
+  },
+})
 
--- UNCOMENT TO RAINBOW COLORS 
+-- UNCOMENT TO RAINBOW COLORS
 
 -- local highlight = {
 --     "RainbowRed",
