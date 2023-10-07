@@ -53,6 +53,17 @@ db.setup({
         key = "space fc",
         action = "Telescope colorscheme",
       },
+      {
+        icon = '󰥔',
+        desc = "  Open Recent Files 󰍉",
+        key = "space fr",
+        action = "Telescope oldfiles",
+      },
+      {
+        icon = '',
+        desc = "  Configuration ...",
+        action = "edit ~/.config/nvim",
+      },
     },
     footer = { "Better than VSCode..." },
   },                   --  config used for theme

@@ -22,6 +22,7 @@ keymap.set('n', '<leader>fb', ":Telescope buffers<CR>")
 keymap.set('n', '<leader>fh', ":Telescope help_tags<CR>")
 keymap.set('n', '<leader>fg', ":Telescope git_files<CR>")
 keymap.set('n', '<leader>fc', ":Telescope colorscheme<CR>")
+keymap.set('n', '<leader>fr', ":Telescope oldfiles<CR>")
 -- barbar
 keymap.set("n", "<leader>x", ":bdelete!<CR>") -- close current buffer tab
 keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>")
