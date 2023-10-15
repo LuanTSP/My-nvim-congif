@@ -35,8 +35,6 @@ require("lazy").setup({
     'stevearc/conform.nvim',
     opts = {},
   },
-  -- linting
-  { 'mfussenegger/nvim-lint' },
   -- ui
   {
     'stevearc/dressing.nvim',
